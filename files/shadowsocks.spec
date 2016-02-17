@@ -33,7 +33,9 @@ gen_config_file() {
 		    "local_port": $(uci_get_by_name $1 local_port),
 		    "password": "$(uci_get_by_name $1 password)",
 		    "timeout": $(uci_get_by_name $1 timeout 60),
-		    "method": "$(uci_get_by_name $1 encrypt_method)"
+		    "method": "$(uci_get_by_name $1 encrypt_method)",
+		    "protocol": "$(uci_get_by_name $1 protocol)",
+		    "obfs": "$(uci_get_by_name $1 obfs)"
 		}
 EOF
 }

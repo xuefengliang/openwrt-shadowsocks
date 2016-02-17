@@ -12,9 +12,9 @@ PKG_NAME:=shadowsocks-libev
 PKG_VERSION:=2.4.5
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/shadowsocks/openwrt-shadowsocks/releases/download/v$(PKG_VERSION)
-PKG_MD5SUM:=b0541ec80f976c166d4af6a914497377
+PKG_SOURCE:=$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=https://github.com/harveyhu2012/shadowsocks-libev/archive
+#PKG_MD5SUM:=b0541ec80f976c166d4af6a914497377
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
