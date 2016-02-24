@@ -13,8 +13,8 @@ PKG_VERSION:=2.4.5
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/breakwa11/shadowsocks-libev.git
-PKG_SOURCE_VERSION:=9dd25c3f1dee13f32350c9c1749bac293648522f
+PKG_SOURCE_URL:=https://github.com/harveyhu2012/shadowsocks-libev
+PKG_SOURCE_VERSION:=fc53fd9153607f496f25e5607bd0a1d7c0b47a37
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
