@@ -36,7 +36,7 @@ gen_config_file() {
 		    "method": "$(uci_get_by_name $1 encrypt_method)",
 		    "protocol": "$(uci_get_by_name $1 protocol)",
 		    "obfs": "$(uci_get_by_name $1 obfs)",
-			"obfsparam": "$(uci_get_by_name $1 obfsparam)"
+			"obfs_param": "$(uci_get_by_name $1 obfs_param)"
 		}
 EOF
 }
