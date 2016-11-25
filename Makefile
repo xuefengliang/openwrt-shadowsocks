@@ -43,10 +43,10 @@ define Package/shadowsocksR-libev/Default
 	DEPENDS:=$(3)
 endef
 
-Package/shadowsocksR-libev = $(call Package/shadowsocksR-libev/Default,openssl,(OpenSSL),+libopenssl +libpthread)
-Package/shadowsocksR-libev-spec = $(call Package/shadowsocksR-libev/Default,openssl,(OpenSSL),+libopenssl +libpthread +ipset +ip +iptables-mod-tproxy)
-Package/shadowsocksR-libev-polarssl = $(call Package/shadowsocksR-libev/Default,polarssl,(PolarSSL),+libpolarssl +libpthread)
-Package/shadowsocksR-libev-spec-polarssl = $(call Package/shadowsocksR-libev/Default,polarssl,(PolarSSL),+libpolarssl +libpthread +ipset +ip +iptables-mod-tproxy)
+Package/shadowsocksR-libev = $(call Package/shadowsocksR-libev/Default,openssl,(OpenSSL),+libopenssl +libpthread +libpcre)
+Package/shadowsocksR-libev-spec = $(call Package/shadowsocksR-libev/Default,openssl,(OpenSSL),+libopenssl +libpthread +ipset +ip +iptables-mod-tproxy +libpcre)
+Package/shadowsocksR-libev-polarssl = $(call Package/shadowsocksR-libev/Default,polarssl,(PolarSSL),+libpolarssl +libpthread +libpcre)
+Package/shadowsocksR-libev-spec-polarssl = $(call Package/shadowsocksR-libev/Default,polarssl,(PolarSSL),+libpolarssl +libpthread +ipset +ip +iptables-mod-tproxy +libpcre)
 
 define Package/shadowsocksR-libev/description
 Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
