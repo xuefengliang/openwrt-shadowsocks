@@ -37,12 +37,15 @@ ShadowsocksR-libev for OpenWrt
    # 以 ar71xx 平台为例
    tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
    cd OpenWrt-SDK-ar71xx-*
+   # pcre依赖
+   mkdir package/libpcre
+   wget https://github.com/openwrt/packages/blob/master/libs/pcre/Makefile -P ./package/libpcre/
    # 获取 Makefile
    git clone -b dev https://github.com/xuefengliang/openwrt-shadowsocks.git package/shadowsocks-libev
    # 选择要编译的包 Network -> shadowsocks-libev
    make menuconfig
-   # 开始编译
-   make -j4 package/shadowsocks-libev/compile V=99
+   # 同时编译shadowsocks-libev和pcre
+   make  V=s
    ```
 
 配置
